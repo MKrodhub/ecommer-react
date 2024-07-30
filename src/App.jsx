@@ -1,16 +1,21 @@
-import { useState } from 'react'
 import './App.css'
 import NavBar from './Components/NavBar/NavBar'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      
-      <ItemListContainer saludo = {"Bienvenido a mi Ecommerce."}/>
-    </div>
+
+      <Routes>   
+        <Route path="/" element={<ItemListContainer/>}/>
+        <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
