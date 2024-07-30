@@ -5,35 +5,47 @@
 
 .navbar{
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 18px;
     font-weight: 700;
+    border-bottom-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: black;
 }
 
 .brand{
     justify-content: center;
     height: 100px;
-}
-
-.list{
-    justify-content: flex-start;
+    max-width: 300px;
 }
 
 .cartwidget{
-
     justify-content: flex-end;
-    height: 20px;  
+    height: 100px; 
+    max-width: 300px; 
+}
+
+.category{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 300px;
 }
 
 .cartwidget,
-.brand,
-.list {
+.brand {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.iconCategory{
+    padding: 5px 0 5px 4%;
 }

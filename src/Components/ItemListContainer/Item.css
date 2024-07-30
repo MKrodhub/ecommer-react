@@ -1,6 +1,15 @@
 .itemImage{
   width: 270px;
   height: 330px;
+  padding-left: 20px;
+}
+
+.item{
+  padding: 5px;
+  width: 320px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: white;
 }
 
 .productGrid{
@@ -9,11 +18,6 @@
   justify-items: center;
   gap: 20px;
   padding: 20px;
-}
-
-.item{
-  padding: 5px;
-  width: 320px;
 }
 
 .nombreItem{

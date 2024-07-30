@@ -1,20 +1,23 @@
 import { useState, useEffect} from 'react'
 import obtenerProductos from '../../data/data.js'
 import ItemDetail from './ItemDetail.jsx'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
-    const [producto, setProducto] = useState({})
+    const [producto, setProducto] = useState({});
+    const { idProducto } = useParams();
 
+console.log(idProducto)
     useEffect( ()=> {
         obtenerProductos()
         .then((data) => {
-            const productoEncontrado = data.find( (productoData)=> productoData.id === 1 )
+            const productoEncontrado = data.find( (productoData)=> productoData.id === Number(idProducto) )
             setProducto(productoEncontrado)
         })
     }, [])
 
     return (
-        <ItemDetail producto={producto}/>
+        <ItemDetail producto={producto}/>    
     )
 }
 
