@@ -1,74 +1,66 @@
 const productos = [
     {
       id: 1,
-      nombre: "Remera",
+      nombre: "Remera Deportiva Wilson",
       precio: "1500$",
       descripcion: "Remera manga corta",
       categoria: "remeras",
       stock: 10,
       genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_826564-MLA74305529851_012024-O.webp"
-    },
-    {
-      id: 2,
-      nombre: "Camisa",
-      precio: "2000$",
-      descripcion: "Camisa blanca simple",
-      categoria: "camisas",
-      stock: 10,
-      genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_999839-MLA76481041276_052024-O.webp"
+      image: "https://http2.mlstatic.com/D_NQ_NP_982622-MLA52449338331_112022-O.webp"
     },
     {
       id: 3,
-      nombre: "Rompe Viento",
+      nombre: "Campera Rompeviento Abyss",
       precio: "5000$",
       descripcion: "Rompe Viento negro simple",
       categoria: "rompeVientos",
       stock: 10,
       genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_758851-MLA72594217451_102023-O.webp"
-    },
-    {
-      id: 4,
-      nombre: "Campera",
-      precio: "3000$",
-      descripcion: "Campera negra",
-      categoria: "camperas",
-      stock: 10,
-      genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_868470-MLA54990064054_052023-O.webp"
+      image: "https://http2.mlstatic.com/D_NQ_NP_814534-MLA54984446239_052023-O.webp"
     },
     {
       id: 5,
-      nombre: "Campera",
+      nombre: "Campera Con Capucha Puma",
       precio: "3000$",
       descripcion: "Campera negra",
       categoria: "camperas",
       stock: 10,
       genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_868470-MLA54990064054_052023-O.webp"
+      image: "https://http2.mlstatic.com/D_NQ_NP_658662-MLA71396297311_082023-O.webp"
     },
     {
       id: 6,
-      nombre: "Campera",
-      precio: "3000$",
-      descripcion: "Campera negra",
-      categoria: "camperas",
-      stock: 10,
+      nombre: "Remera Fila De Running",
+      precio: "2000$",
+      descripcion: "Remera running negra",
+      categoria: "remeras",
+      stock: 7,
       genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_868470-MLA54990064054_052023-O.webp"
+      image: "https://http2.mlstatic.com/D_NQ_NP_959713-MLA77732125843_072024-O.webp"
     },
     {
       id: 7,
-      nombre: "Campera",
-      precio: "3000$",
-      descripcion: "Campera negra",
-      categoria: "camperas",
-      stock: 10,
+      nombre: "Short Deportivo Salomon",
+      precio: "1500$",
+      marca: "Salomon",
+      descripcion: "Short deportivo negro",
+      categoria: "shorts",
+      stock: 8,
       genero: "unisex",
-      image: "https://http2.mlstatic.com/D_NQ_NP_868470-MLA54990064054_052023-O.webp"
-    }    
+      image: "https://http2.mlstatic.com/D_NQ_NP_687777-MLA74034441161_012024-O.webp"
+    },
+    {
+      id: 7,
+      nombre: "Bolso Deportivo Everlast",
+      precio: "3000$",
+      marca: "Everlast",
+      descripcion: "Bolso deportivo negro",
+      categoria: "accesorios",
+      stock: 8,
+      genero: "unisex",
+      image: "https://http2.mlstatic.com/D_NQ_NP_690188-MLU76864963997_062024-O.webp"
+    }
   ]
 
   const obtenerProductos = () => {

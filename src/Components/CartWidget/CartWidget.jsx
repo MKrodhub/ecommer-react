@@ -7,7 +7,7 @@ export const CartWidget = () => {
     //Imagen carro y numero cde  items (puede ser otro componente, creo q al pedo)
     <div className="cartwidget">
       <p>3</p>
-      <TiShoppingCart size={30} />
+      <TiShoppingCart size={40} />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import "./navbar.css"
 import CartWidget from "../CartWidget/CartWidget"
 import { Link } from "react-router-dom"
+import logo from '../../../public/logo.jpg'
 
 export const NavBar = () => {
   return (
@@ -20,7 +21,7 @@ export const NavBar = () => {
         </div>
         <div className="brand">
           <Link to="/">
-          <p>Ecommerce Ropa</p>
+            <img src={logo} alt="" className='logoImage'/>
           </Link>
         </div>
 

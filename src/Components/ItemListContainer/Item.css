@@ -1,5 +1,5 @@
-img{
-  width: 300px;
+.itemImage{
+  width: 270px;
   height: 330px;
 }
 
@@ -17,7 +17,7 @@ img{
 }
 
 .nombreItem{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 900;
   padding: 0 0px 0px 15px;
   margin: 0;
