@@ -7,7 +7,7 @@ export const Item = ( {producto} ) => {
     <div key={producto.id} className='item'>
         <img width={150} src={producto.image} alt="" className='itemImage'/>
         <p className='nombreItem'>{producto.nombre}</p>
-        <p className='precioItem'>{producto.precio}</p>
+        <p className='precioItem'>${producto.precio}</p>
         <Link to={ "/detalle/"+ producto.id }>Ver detalles</Link>
     </div>
   )

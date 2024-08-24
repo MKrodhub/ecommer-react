@@ -1,3 +1,6 @@
+import { addDoc, collection } from 'firebase/firestore'
+import db from '../db/db.js';
+
 const productos = [
     {
       id: 1,
@@ -63,13 +66,13 @@ const productos = [
     }
   ];
 
-  const obtenerProductos = () => {
-    return new Promise( (resolve) => {
-      setTimeout(() => {
-        resolve(productos)
-      }, 500);
+const seedProducts = () => {
+    productos.map(({ id, ...rest }) => {
+        const productosRef = collection(db, "productos");
+        addDoc(productosRef, rest);
+    });
 
-    })
-  }
+    console.log("Productos subidos")
+}
 
-  export default obtenerProductos
+seedProducts()

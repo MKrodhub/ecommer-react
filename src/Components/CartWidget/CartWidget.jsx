@@ -1,14 +1,20 @@
 import { TiShoppingCart } from "react-icons/ti";
 import "../NavBar/navbar.css"
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 export const CartWidget = () => {
+  const { cantidadTotal } = useContext(CartContext)
+
+  let cantidad = cantidadTotal();
+
   return (
 
-    //Imagen carro y numero cde  items (puede ser otro componente, creo q al pedo)
-    <div className="cartwidget">
-      <p>3</p>
+    <Link to="/cart" className="cartwidget">
+      <p>{cantidad > 0 && cantidad}</p>
       <TiShoppingCart size={40} />
-    </div>
+    </Link>
   )
 }
 

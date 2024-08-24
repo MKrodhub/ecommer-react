@@ -34,3 +34,28 @@
   margin: 0;
 }
 
+.itemDetailContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemDetail{
+  max-width: 600px;
+}
+
+.ItemCounterContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemCount{
+  display: flex; /* Activa Flexbox */
+  justify-content: space-around;
+  max-width: 200px;
+  max-height: 80px; 
+  gap: 15px;
+}
+
+.itemCounter{
+  font-size: 20px;
+}
